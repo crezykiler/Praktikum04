@@ -7,7 +7,7 @@ public class Siakad17 {
 
         String nama, nim, kelas;
         byte absen;
-        double nilaiKuis, nilaiTugas, nilaiUts, nilaiUas, nilaiAkhir;
+        double nilaiKuis, nilaiTugas, nilaiUjian, nilaiAkhir;
 
         System.out.print("Masukkan nama: ");
         nama = Mulyono.nextLine();
@@ -15,19 +15,17 @@ public class Siakad17 {
         nim = Mulyono.nextLine();
         System.out.print("Masukkan kelas: ");
         kelas = Mulyono.nextLine();
-        System.out.print("Masukkan absen: ");
+        System.out.print("Masukkan nomor absen: ");
         absen = Mulyono.nextByte();
 
         System.out.print("Masukkan nilai kuis: " );
         nilaiKuis = Mulyono.nextDouble();
         System.out.print("Masukkan nilai tugas: ");
         nilaiTugas = Mulyono.nextDouble();
-        System.out.print("Masukkan nilai uts: ");
-        nilaiUts = Mulyono.nextDouble();
-        System.out.print("Masukkan nilai uas: ");
-        nilaiUas = Mulyono.nextDouble();
-
-        nilaiAkhir = (nilaiKuis * 0.20) + (nilaiTugas * 0.15) + (nilaiUts * 0.30) + (nilaiUas * 0.35);
+        System.out.print("Masukkan nilai ujian: ");
+        nilaiUjian = Mulyono.nextDouble();
+    
+        nilaiAkhir = (nilaiKuis * 0.30) + (nilaiTugas * 0.30) + (nilaiUjian * 0.40);
 
         System.out.println("Mahasiswa dengan nama " + nama + " NIM " + nim + " kelas : " + kelas.toUpperCase() + " nomor absen: " + absen);
         System.out.println("Nilai Akhir: " + nilaiAkhir);
